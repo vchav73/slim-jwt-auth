@@ -188,7 +188,7 @@ class JwtAuthentication
     public function decodeToken($token)
     {
         try {
-            return \JWT::decode(
+            return JWT::decode(
                 $token,
                 $this->options["secret"],
                 ["HS256", "HS512", "HS384", "RS256"]
