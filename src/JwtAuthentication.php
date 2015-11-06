@@ -21,6 +21,7 @@ use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Firebase\JWT\JWT;
 
 class JwtAuthentication
 {
